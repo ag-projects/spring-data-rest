@@ -2,11 +2,13 @@ package com.agharibi.springdatarest.repository;
 
 import com.agharibi.springdatarest.models.Location;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
+@RepositoryRestResource(exported = false)
 public interface LocationJpaRepository extends JpaRepository<Location, Long> {
 
     /**
