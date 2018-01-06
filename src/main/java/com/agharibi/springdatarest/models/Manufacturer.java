@@ -32,7 +32,7 @@ public class Manufacturer {
     private Boolean active;
 
     @OneToMany(cascade = CascadeType.ALL)
-    // @JoinColumn(name = "MANUFACTURER_ID" )
+    @JoinColumn(name = "MANUFACTURER_ID" )
     private List<Model> models = new ArrayList<>();
 
     @ManyToOne

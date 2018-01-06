@@ -17,4 +17,10 @@ public class ControllerConfiguration {
     public void notValid() {
 
     }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "Inactive manufacturer")
+    public void notActive() {
+
+    }
 }

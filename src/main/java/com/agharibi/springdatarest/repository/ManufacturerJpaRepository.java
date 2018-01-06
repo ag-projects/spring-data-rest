@@ -13,7 +13,6 @@ import java.util.Date;
 import java.util.List;
 
 @Repository
-@RepositoryRestResource(path = "manu", collectionResourceRel = "manu")
 @PreAuthorize("hasRole('ROLE_ADMIN')")
 public interface ManufacturerJpaRepository extends JpaRepository<Manufacturer, Long> {
 
