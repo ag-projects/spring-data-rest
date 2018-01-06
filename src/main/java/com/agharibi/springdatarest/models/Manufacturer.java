@@ -1,6 +1,7 @@
 package com.agharibi.springdatarest.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -19,6 +20,7 @@ public class Manufacturer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @NotNull
     private String name;
 
     @Column(name="FOUNDEDDATE")
